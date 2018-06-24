@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/news_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/askadd"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/news_text"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView
+        android:id="@+id/news_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/agree"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginRight="45dp"/>
+
+    <TextView
+        android:id="@+id/news_disagree"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/disagree"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/news_agreed"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/agreed"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginRight="22dp"/>
+
+    <TextView
+        android:id="@+id/news_disagreed"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/disagreed"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginRight="22dp"/>
+
+</RelativeLayout>

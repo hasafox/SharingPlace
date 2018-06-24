@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/friend_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="hax"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"/>
+
+    <ToggleButton
+        android:id="@+id/friend_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_toggle"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:clickable="true"
+        android:textOff=""
+        android:textOn=""
+        android:minWidth="40dp"
+        android:minHeight="24dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

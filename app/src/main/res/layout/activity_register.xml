@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hax.sharingplace.RegisterActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rgs_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/reg_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputname"
+        android:layout_below="@id/rgs_icon"
+        android:layout_marginTop="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/reg_oldpwr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputpass"
+        android:layout_below="@id/reg_account"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/reg_newpwr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputpassagain"
+        android:layout_below="@id/reg_oldpwr"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_below="@id/reg_newpwr"
+        android:inputType="textEmailAddress"/>
+
+
+    <Button
+        android:id="@+id/reg_register"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:background="#0066cc"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/reg_email"/>
+
+</RelativeLayout>

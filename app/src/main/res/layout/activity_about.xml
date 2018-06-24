@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/abt_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/about"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/abt_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="
+1.本产品不会以任何方式向用户收取费用，请不要上当受骗，至少现在不会\n
+2.本人不会泄漏任何用户资料，请放心使用\n
+3.请不要随意允许陌生人获取你的地理位置\n
+4.本产品注册登录后方可使用\n
+5.若想获取好友位置信息，需征求好友同意才行\n
+6.一个邮箱只能注册一个账号，找回密码需要账号才行\n
+7.登录之后想切换账号或者再注册，请退出后执行"
+        android:maxLines="10"
+        android:textSize="16sp"
+        android:layout_below="@id/abt_toolbar" />
+
+</RelativeLayout>
